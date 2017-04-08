@@ -3,5 +3,5 @@ python:
   - "2.7"
 install:
   - make deps
-srcipt:
+script:
   - make test
