@@ -11,5 +11,5 @@ after_success:
   - make docker_build
 deploy:
   provider: heroku
-  api_key: tranquil-inlet-80379
-    secure: ${HEROKU_API_KEY}
+  app: tranquil-inlet-80379
+  api_key: ${HEROKU_API_KEY}
