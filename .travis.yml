@@ -9,14 +9,9 @@ script:
   - make test
 after_success:
   - make docker_build
-<<<<<<< HEAD
-  -PASSWORD=${DOCKER_PASSWORD} make docker_push
 
 
 deploy:
   provider: heroku
   api_key: tranquil-inlet-80379
-    secure: $HEROKU_API_KEY
-=======
-  - PASSWORD=${DOCKER_PASSWORD} make docker_push
->>>>>>> a099f1b268325c8e5103a0a5294679ca924d776b
+    secure: ${HEROKU_API_KEY}
